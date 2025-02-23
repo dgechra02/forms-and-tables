@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating tables and forms</title>
+</head>
+
+<body>
+    <div class="tables">
+        <h3>Table1</h3>
+        <table border="1" width="500px" height="300px">
+            <thead>
+                <tr>
+                    <th colspan="6">Time Table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6">Hours</td>
+                    <td>Mon</td>
+                    <td>Tue</td>
+                    <td>Wed</td>
+                    <td>Thu</td>
+                    <td>Fri</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Arts</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>History</td>
+                    <td>English</td>
+                    <td>Social</td>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <td colspan="5">LUNCH</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td rowspan="2">Project</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>History</td>
+                    <td>English</td>
+                    <td>Social</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h3>Table2</h3>
+        <table border="1" width="500px" height="200px" cellspacing="5" cellpadding="10">
+            <thead>
+                <tr>
+                    <th colspan="7">April</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="6" rowspan="2">Holiday</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h3>Table3</h3>
+        <table border="1" width="800px" height="300px">
+            <thead>
+                <tr>
+                    <th colspan="3">Invoice #96545648</th>
+                    <th colspan="2">16 February, 2025</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Pay to:
+                        Agarwall Sweets
+                        Solanipuram, Roorkee
+                        Uttarakhand, 247677
+                    </td>
+                    <td colspan="3">
+                        Customer:
+                        Vishal Kumar,
+                        Civil lines,
+                        Roorkee
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name / Description
+                        Kaju Katli
+                        Ras Malai
+                    </td>
+                    <td>Qty.
+                        500g
+                        2 peices
+                    </td>
+                    <td colspan="2">@
+                        1200
+                        60
+                    </td>
+                    <td>Cost
+                        600
+                        120
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">Subtotal</td>
+                    <td>720.00</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tax</td>
+                    <td colspan="2">10%</td>
+                    <td>72.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Grand Total</td>
+                    <td>792.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h3>Form1</h3>
+        <br>
+        <h1>Contact Details</h1>
+        <form action="">
+            <fieldset>
+                <legend>Please enter your personal detials</legend>
+                <label for="firstName">First Name:*</label>
+                <input type="text" name="" id="firstName" required><br><br>
+                <label for="lastName">Last Name:*</label>
+                <input type="text" name="" id="lastName" required><br><br>
+                <label for="streetAddress">Street address:</label>
+                <input type="text" name="" id="streetAddress"><br><br>
+                <label for="town-city">Town/city:</label>
+                <input type="text" name="" id="town-city"><br><br>
+                <label for="postcode">Postcode/Zip:</label>
+                <input type="number" name="" id="postcode"><br><br>
+                <label for="tel">Telphone:</label>
+                <input type="tel" name="" id="tel"><br><br>
+                <label for="number">Mobile:</label>
+                <input type="number" name="" id="number"><br><br>
+                <label for="email">Email address:*</label>
+                <input type="email" name="" id="email" required><br><br>
+                <p>Fields marked with * are required.</p>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <hr>
+
+        <h3>Form2</h3>
+        <div class="form2" style="border: 1px solid black; padding: 5px;">
+
+            <form action="">
+                <h1>Welcome to Mr. Rakoczy's Popcorn Sales Site Extravaganza</h1>
+                
+                <label for="buyername">Buyer's Name:</label>
+                <input type="text" name="" id="buyername"><br><br>
+                <label for="street">Street Address:</label>
+                <input type="text" name="" id="street"><br><br>
+                <label for="city-province-postal">City, Province, Postal Code:</label>
+                <input type="text" name="" id="city-province-postal"><br><br>
+            </form>
+
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quality</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unpopped Popcorn (1 lb.)</td>
+                        <td>$3.00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Caramel Popcorn (2 lb. canister)</td>
+                        <td>$3.50</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Caramel Nut Popcorn(2 lb. canister)</td>
+                        <td>$4.50</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tofee Nut Popcorn(2 lb. canister)</td>
+                        <td>$5.00</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Payment Method</h3>
+            <input type="radio" name="payment-options" id="Visa">
+            <label for="Visa">Visa</label><br>
+            <input type="radio" name="payment-options" id="masterCard">
+            <label for="masterCard">Master Card</label><br>
+            <input type="radio" name="payment-options" id="discover">
+            <label for="discover">Discover</label><br>
+            <input type="radio" name="payment-options" id="check">
+            <label for="check">Check</label><br>
+            <br>
+            <button>Submit Order</button>
+
+
+
+        </div>
+        <hr>
+
+        <h3>Form3</h3>
+        <div class="form3" style="background-color: rgb(214, 214, 206); padding: 10px;">
+
+            <form action="" >
+                <h1>Employee Registration Form</h1>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="" id="firstName" placeholder="Enter First Name">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="" id="lastName"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="" id="email">
+                <label for="phone">Phone:</label>
+                <input type="number" name="" id="phone"><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="trans">
+                <label for="trans">Trans</label>
+                <input type="radio" name="gender" id="not-to-say">
+                <label for="not-to-say">Prefer not to say</label><br>
+                <label for="date">Date of Birth:</label>
+                <input type="date" name="date" id="date">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Address Details</legend>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city">
+                <label for="state">State:</label>
+                <input type="text" name="" id="state"><br>
+                <label for="textarea">Address:</label>
+                <textarea name="" id="textarea" rows="3" cols="50"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Professional Information</legend>
+                <label for="merital">Merital Status:</label>
+                <select name="" id="merital">
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                </select>
+                <label for="edu">Education</label>
+                <select name="" id="edu">
+                    <option value="high-school">High School</option>
+                    <option value="college">College</option>
+                </select><br>
+                <label for="experience">Experience:</label>
+                <select name="" id="experience">
+                    <option value="fresher">Fresher</option>
+                    <option value="experienced">Experienced</option>
+                </select>
+                <label for="position">Position</label>
+                <select name="" id="position">
+                    <option value="intern">Intern</option>
+                    <option value="full-time">Full Time</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="Rating">Rate our company:</label>
+                <input type="range" name="" id="Rating"><br>
+                <label for="resume">Upload Resume:</label>
+                <input type="file" name="" id="resume">
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </div>
+        <br><br><br><br><br>
+    </div>
+</body>
+
+</html>
