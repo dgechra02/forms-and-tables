@@ -1,0 +1,36 @@
+.firstClass {
+    color: red;
+}
+
+#firstName {
+    background-color: aqua;
+}
+
+#lastName {
+    background-color: blue;
+}
+
+#number {
+    background-color: cadetblue;
+}
+
+#email {
+    background-color: brown;
+}
+
+.form1-fieldset{
+    width: 500px;
+}
+
+.my-table{
+    height: 800px;
+    width: 800px;
+}
+
+.tableheader {
+    height: 40px;
+}
+
+.form2 {
+    width: 500px;
+}
